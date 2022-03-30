@@ -19,9 +19,9 @@ namespace lab_2_zadanie
             Name = name;
         }
 
-        public string Print(string prefix)
+        public virtual void Print(string prefix)
         {
-            return prefix + "Product's name: " + Name;
+            Console.WriteLine(prefix + "Product's name: " + Name);
         }
     }
 

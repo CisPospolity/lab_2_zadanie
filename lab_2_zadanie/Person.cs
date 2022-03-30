@@ -31,9 +31,9 @@ namespace lab_2_zadanie
             Age = age;
         }
 
-        public string Print (string prefix)
+        public virtual void Print (string prefix)
         {
-            return prefix + "Person's name: " + Name + "; Person's age:" + Age;
+            Console.WriteLine(prefix + "Person's name: " + Name + "; Person's age:" + Age);
         }
     }
 }

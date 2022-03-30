@@ -25,14 +25,15 @@ namespace lab_2_zadanie
             tasks.RemoveAt(index);
         }
 
-        public string Print(string prefix)
+        public override void Print(string prefix)
         {
             string productList = "";
+            Console.WriteLine(prefix + "Buyer's name: " + Name + "; Buyer's age:" + Age + "\n" + productList);
             foreach (Product p in tasks)
             {
-               
+                p.Print("\t \t");
             }
-            return prefix + "Buyer's name: " + Name + "; Buyer's age:" + Age;
+
         }
     }
 }
